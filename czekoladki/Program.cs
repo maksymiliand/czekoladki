@@ -10,9 +10,17 @@ namespace czekoladki
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hej ho!");
+            bool[,] czekodzem = new bool[5,5];
+
+            for (int i = 0; i<czekodzem.GetLength(0); i++)
+            {
+                for (int j = 0;j<czekodzem.GetLength(1);j++)
+                {
+                   Console.WriteLine("tblica to " + czekodzem[j,i]); 
+                }
+            }
             Console.ReadKey();
-           
+            
         }
     }
 }
