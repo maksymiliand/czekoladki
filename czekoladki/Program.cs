@@ -10,6 +10,9 @@ namespace czekoladki
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hej ho!");
+            Console.ReadKey();
+           
         }
     }
 }
