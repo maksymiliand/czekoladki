@@ -13,19 +13,20 @@ namespace czekoladki
             bool[,] czekodzem = new bool[5,5];
             inicjujstan(czekodzem);
 
-
-
-
             wyswietlstan(czekodzem);
+            for (int c = 0;c<25;c++)
+            {
 
-            Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [wiersze]");
-            int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [kolumny]");
-            int b = int.Parse(Console.ReadLine());
+                Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [wiersze]");
+                int a = int.Parse(Console.ReadLine());
+                Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [kolumny]");
+                int b = int.Parse(Console.ReadLine());
+                
+                czekodzem[a,b] = false;
+                
 
-            czekodzem[a,b] = false;
-
-            wyswietlstan(czekodzem);
+                wyswietlstan(czekodzem);
+            }
 
             Console.ReadKey();
             
