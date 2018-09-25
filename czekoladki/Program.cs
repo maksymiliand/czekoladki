@@ -16,9 +16,34 @@ namespace czekoladki
             {
                 for (int j = 0;j<czekodzem.GetLength(1);j++)
                 {
+                   czekodzem[i,j] = true;
+                }
+            }
+
+
+            for (int i = 0; i<czekodzem.GetLength(0); i++)
+            {
+                for (int j = 0;j<czekodzem.GetLength(1);j++)
+                {
                    Console.WriteLine("tblica to " + czekodzem[j,i]); 
                 }
             }
+
+            Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [wiersze]");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [kolumny]");
+            int b = int.Parse(Console.ReadLine());
+
+            czekodzem[a,b] = false;
+
+            for (int i = 0; i<czekodzem.GetLength(0); i++)
+            {
+                for (int j = 0;j<czekodzem.GetLength(1);j++)
+                {
+                   Console.WriteLine("tblica to " + czekodzem[j,i]); 
+                }
+            }
+
             Console.ReadKey();
             
         }
