@@ -21,13 +21,7 @@ namespace czekoladki
             }
 
 
-            for (int i = 0; i<czekodzem.GetLength(0); i++)
-            {
-                for (int j = 0;j<czekodzem.GetLength(1);j++)
-                {
-                   Console.WriteLine("tblica to " + czekodzem[j,i]); 
-                }
-            }
+            wyswietlstan(czekodzem);
 
             Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [wiersze]");
             int a = int.Parse(Console.ReadLine());
@@ -36,6 +30,13 @@ namespace czekoladki
 
             czekodzem[a,b] = false;
 
+            wyswietlstan(czekodzem);
+
+            Console.ReadKey();
+            
+        }
+        static void wyswietlstan(bool[,] czekodzem)
+        {
             for (int i = 0; i<czekodzem.GetLength(0); i++)
             {
                 for (int j = 0;j<czekodzem.GetLength(1);j++)
@@ -43,9 +44,6 @@ namespace czekoladki
                    Console.WriteLine("tblica to " + czekodzem[j,i]); 
                 }
             }
-
-            Console.ReadKey();
-            
         }
     }
 }
