@@ -1,0 +1,7 @@
+c:\users\maksymilian\source\repos\czekoladki\czekoladki\czekoladki\bin\Debug\czekoladki.exe.config
+c:\users\maksymilian\source\repos\czekoladki\czekoladki\czekoladki\bin\Debug\czekoladki.exe
+c:\users\maksymilian\source\repos\czekoladki\czekoladki\czekoladki\bin\Debug\czekoladki.pdb
+c:\users\maksymilian\source\repos\czekoladki\czekoladki\czekoladki\obj\Debug\czekoladki.csprojAssemblyReference.cache
+c:\users\maksymilian\source\repos\czekoladki\czekoladki\czekoladki\obj\Debug\czekoladki.csproj.CoreCompileInputs.cache
+c:\users\maksymilian\source\repos\czekoladki\czekoladki\czekoladki\obj\Debug\czekoladki.exe
+c:\users\maksymilian\source\repos\czekoladki\czekoladki\czekoladki\obj\Debug\czekoladki.pdb
