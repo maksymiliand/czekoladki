@@ -11,14 +11,9 @@ namespace czekoladki
         static void Main(string[] args)
         {
             bool[,] czekodzem = new bool[5,5];
+            inicjujstan(czekodzem);
 
-            for (int i = 0; i<czekodzem.GetLength(0); i++)
-            {
-                for (int j = 0;j<czekodzem.GetLength(1);j++)
-                {
-                   czekodzem[i,j] = true;
-                }
-            }
+
 
 
             wyswietlstan(czekodzem);
@@ -42,6 +37,16 @@ namespace czekoladki
                 for (int j = 0;j<czekodzem.GetLength(1);j++)
                 {
                    Console.WriteLine("tblica to " + czekodzem[j,i]); 
+                }
+            }
+        }
+        static void inicjujstan(bool[,] czekodzem)
+        {
+            for (int i = 0; i<czekodzem.GetLength(0); i++)
+            {
+                for (int j = 0;j<czekodzem.GetLength(1);j++)
+                {
+                   czekodzem[i,j] = true;
                 }
             }
         }
