@@ -14,7 +14,8 @@ namespace czekoladki
             inicjujstan(czekodzem);
 
             wyswietlstan(czekodzem);
-            for (int c = 0;c<25;c++)
+
+            for (int c = 0;c<czekodzem.GetLength(0) * czekodzem.GetLength(1);c++)
             {
 
                 Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [wiersze]");
