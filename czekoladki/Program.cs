@@ -39,7 +39,6 @@ namespace czekoladki
                 }
 
                 
-
                 wyswietlstan(czekodzem);
             }
 
