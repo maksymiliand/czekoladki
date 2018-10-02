@@ -14,28 +14,38 @@ namespace czekoladki
             inicjujstan(czekodzem);
 
             wyswietlstan(czekodzem);
-
             for (int c = 0;c<czekodzem.GetLength(0) * czekodzem.GetLength(1);c++)
             {
-
-                Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [wiersze]");
-                int a = int.Parse(Console.ReadLine());
-                Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [kolumny]");
-                int b = int.Parse(Console.ReadLine());
-                if (a > 4 || b > 4)
+                try 
                 {
-                    Console.WriteLine("to za duzo czekolady");
-                    continue;
-                }   
+                    Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [wiersze]");
+                    int a = int.Parse(Console.ReadLine());
+                    Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [kolumny]");
+                    int b = int.Parse(Console.ReadLine());
+                    if (a > 4 || b > 4)
+                    {
+                        Console.WriteLine("to za duzo czekolady");
+                        continue;
+                    }   
 
-                if (czekodzem[a,b] == true)
+                    if (czekodzem[a,b] == true)
+                    {
+                        czekodzem[a,b] = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("NIE OSZUKUJ TO GLUPIE!!!!");
+                        c--;
+                    }
+
+                } 
+                catch (FormatException exc)
                 {
-                    czekodzem[a,b] = false;
+                    Console.WriteLine("Nieprawidlowa liczba");
                 }
-                else
+                catch (OverflowException)
                 {
-                    Console.WriteLine("NIE OSZUKUJ TO GLUPIE!!!!");
-                    c--;
+                    Console.WriteLine("ty mi prubujesz zepsuc slawe ale sie nie dam");
                 }
 
                 
