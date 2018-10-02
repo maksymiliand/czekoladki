@@ -47,8 +47,16 @@ namespace czekoladki
             {
                 for (int j = 0;j<czekodzem.GetLength(1);j++)
                 {
-                   Console.WriteLine("tblica to " + czekodzem[j,i]); 
+                   if (czekodzem[i,j] == true)
+                   {
+                       Console.Write("|  ");
+                   }     
+                   else
+                   {
+                       Console.Write("| X");
+                   } 
                 }
+                Console.WriteLine("|");
             }
         }
         static void inicjujstan(bool[,] czekodzem)
