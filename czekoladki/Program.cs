@@ -22,6 +22,16 @@ namespace czekoladki
                 int a = int.Parse(Console.ReadLine());
                 Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [kolumny]");
                 int b = int.Parse(Console.ReadLine());
+                if (a > 4)
+                {
+                    Console.WriteLine("to za duzo czekolady");
+                    continue;
+                }   
+                else if (b > 4)
+                {
+                    Console.WriteLine("za duzo czekolady");
+                    continue;
+                }
                 
                 
                 if (czekodzem[a,b] == true)
@@ -33,6 +43,7 @@ namespace czekoladki
                     Console.WriteLine("NIE OSZUKUJ TO GLUPIE!!!!");
                     c--;
                 }
+
                 
 
                 wyswietlstan(czekodzem);
