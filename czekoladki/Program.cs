@@ -28,8 +28,6 @@ namespace czekoladki
                     continue;
                 }   
 
-                
-                
                 if (czekodzem[a,b] == true)
                 {
                     czekodzem[a,b] = false;
