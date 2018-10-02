@@ -10,7 +10,8 @@ namespace czekoladki
     {
         static void Main(string[] args)
         {
-            bool[,] czekodzem = new bool[5,5];
+            bool[,] czekodzem = new bool[6,6];
+            
             inicjujstan(czekodzem);
 
             wyswietlstan(czekodzem);
@@ -22,11 +23,16 @@ namespace czekoladki
                     int a = int.Parse(Console.ReadLine());
                     Console.WriteLine("ktora czekoladka z czekodzemu jest odpowiednia by ją zjesc zdecyduj sam [kolumny]");
                     int b = int.Parse(Console.ReadLine());
-                    if (a > 4 || b > 4)
+                    if (a > czekodzem.GetLength(0) || b > czekodzem.GetLength(1))
                     {
                         Console.WriteLine("to za duzo czekolady");
                         continue;
                     }   
+
+
+
+
+
 
                     if (czekodzem[a,b] == true)
                     {
@@ -39,7 +45,7 @@ namespace czekoladki
                     }
 
                 } 
-                catch (FormatException exc)
+                catch (FormatException)
                 {
                     Console.WriteLine("Nieprawidlowa liczba");
                 }
